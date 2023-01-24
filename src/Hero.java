@@ -1,2 +1,10 @@
-package PACKAGE_NAME;public class Hero {
+public abstract class Hero extends GameEntity
+        implements HavingPower {
+    private SuperAbility superAbility;
+
+
+    public Hero(int health, int damage, SuperAbility superAbility) {
+        super(health, damage);
+        this.superAbility = superAbility;
+    }
 }

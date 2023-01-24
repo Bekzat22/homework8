@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public interface HavingPower {
-}
+public interface HavingPower {
+        void applySuperPower(Hero[] heroes, Boss boss);
+    }
+

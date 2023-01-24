@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class Boss {
+public class Boss extends GameEntity {
+    public Boss(int health, int damage) {
+        super(health, damage);
+    }
 }
