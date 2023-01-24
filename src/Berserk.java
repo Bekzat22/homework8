@@ -8,13 +8,9 @@ public class Berserk extends Hero{
 
     @Override
     public void applySuperPower(Hero[] heroes, Boss boss) {
-        int revert = boss.getDamage()/5;
-            boss.setHealth(boss.getHealth() -  revert);
-
-            System.out.println("berserk returns " +revert);
-
-
-
-
-    }
+       int revert = boss.getDamage()/5;
+            boss.setHealth(boss.getHealth() - (this.getDamage()+ revert));
+            int r =this.getDamage()+revert;
+            System.out.println("berserk returns " +r);
+   }
 }
