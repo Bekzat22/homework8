@@ -37,9 +37,7 @@ public class RPG_Game {
         }
     }
 
-    private static void bossHit(Boss boss) {
-        boss.setDamage(50);
-    }
+   
 
 
     private static void ApplyAbility(Hero[] heroes, Boss boss) {
